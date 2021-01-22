@@ -38,29 +38,38 @@ x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(X, y
 
 # This is going to be how many points we should use to make our decision.
 # The K closest points to our data point.
-model = KNeighborsClassifier(n_neighbors=5)
+n_neighbors_we_look_at = 7
+model = KNeighborsClassifier(n_neighbors=n_neighbors_we_look_at)
 # https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html
 
-model.fit(x_train, y_train) # Training our model
+model.fit(x_train, y_train)  # Training our model
 acc = model.score(x_test, y_test)
 print(acc)
 
 predicted = model.predict(x_test)
-names = ["unacc", "acc", "good", "vgood"]
+names = ['acc', 'good', 'unacc', 'vgood']
 #  We create a names list so that we can convert our integer predictions into
 #  their string representation
 # This following code will display, our data our algo prediction on the class, the actual class, and if it was correct
 
+total_predicted = 0
+total = 0
 for x in range(len(predicted)):
     print("Using data of: ", x_test[x], "\n"
-          "The algo predicted: ", names[predicted[x]], "\n"
-          "Actual: ", names[y_test[x]])
+                                        "The algo predicted: ", names[predicted[x]], "\n"
+                                                                                     "Actual: ", names[y_test[x]])
     if names[predicted[x]] == names[y_test[x]]:
         print("The model classified CORRECTLY")
+        total_predicted += 1
     else:
         print("The model classified INCORRECTLY")
+    total += 1
 
     # n = neighbors of each point in our testing data
     n = model.kneighbors([x_test[x]], 9, True)
     print("N: ", n)
     print("\n")
+
+print("Computer predicted: ", total_predicted, "out of:", total)
+print(total_predicted / total * 100, "accuracy rating")
+print("Viewing ", n_neighbors_we_look_at, " neighbors")
