@@ -7,3 +7,7 @@ as well as to better use Python's strong libraries and resources.
 ### [LinearRegression](https://github.com/elsowiny/Python-Machine-Learning/tree/main/linearRegression)
 
 ![Python Model Graph](./linearRegression/modelGraph.png "Linear Regression")
+
+
+### [K-Nearest Neighbors](https://github.com/elsowiny/Python-Machine-Learning/tree/main/KNN)
+![Python Model Graph](./KNN/KNN.png "KNN")

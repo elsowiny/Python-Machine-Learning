@@ -4,6 +4,7 @@ from sklearn.neighbors import KNeighborsClassifier
 import pandas as pd
 import numpy as np
 from sklearn import linear_model, preprocessing
+import matplotlib.pyplot as plt
 
 """
 In this example of ML, we use K nearest neighbors to help classify our data.
