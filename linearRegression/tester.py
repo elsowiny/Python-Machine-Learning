@@ -36,6 +36,10 @@ x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(x, y
 # Now we will train our model x number of times, to get our best prediction
 # We can change the var numberOfTrainings to decide how many iterations to try for
 # An acc of 85% is good, an acc of 95% is even better
+
+
+# Commented out the first go around of model training.
+# The model I have found to be best from the code below is included as a pickle file in this directory
 """
 best = 0
 numberOfTrainings = 20
