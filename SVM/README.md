@@ -10,3 +10,4 @@ In this project, I explore using these tools and explore machine learning in Pyt
 (Breast Cancer Data)
 
 ## Support Vector Machines
+![Python Model Graph](SVM.png "SVM")
