@@ -15,5 +15,5 @@ as well as to better use Python's strong libraries and resources.
 ### [Support Vector Machine](https://github.com/elsowiny/Python-Machine-Learning/tree/main/SVM)
 ![Python Model Graph](./SVM/SVM.png "SV M")
 
-### [K MEANS Clustering](https://github.com/elsowiny/Python-Machine-Learning/tree/main/)
+### [K MEANS Clustering](https://github.com/elsowiny/Python-Machine-Learning/tree/main/UnsupervisedLearning/KMEANS)
 ![Python Model Graph](./UnsupervisedLearning/KMEANS/KMEANS.png "KMEANS")
