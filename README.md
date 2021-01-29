@@ -17,3 +17,9 @@ as well as to better use Python's strong libraries and resources.
 
 ### [K MEANS Clustering](https://github.com/elsowiny/Python-Machine-Learning/tree/main/UnsupervisedLearning/KMEANS)
 ![Python Model Graph](./UnsupervisedLearning/KMEANS/KMEANS.png "KMEANS")
+
+
+### TO DO/ FIX
+Create a page for each  \
+Use a template for the base and just switch out the models? \
+add styling? bootstrap? 
