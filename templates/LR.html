@@ -1,4 +1,23 @@
 {% extends "base.html" %}
+
+{% block title %}
+{% block title2 %}
+{{name}}
+{% endblock %}
+{% endblock %}
 {% block content %}
-<button type="button" class="btn btn-primary">Primary</button>
+<!-- Main Input For Receiving Query to our ML -->
+    <form action="" method="post">
+        <input type="radio" id="G1" name="G1" value="G1">
+        <label for="G1">Grade 1</label><br>
+        <input type="radio" id="G2" name="G2" value="G2">
+        <label for="G2">Grade 2</label><br>
+        <input type="radio" id="G3" name="G3" value="G3">
+        <label for="G1">Grade 1</label><br>
+        <input type="radio" id="G1" name="G1" value="G1">
+        <label for="G1">Grade 1</label><br>
+<button type="button" class="btn btn-primary">Run {{name}} model</button>
+        </form>
+
+
 {% endblock %}

@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "base.html" %}
 
-</body>
-</html>
+{% block title %}
+{% block title2 %}
+{{name}}
+{% endblock %}
+{% endblock %}
+{% block content %}
+<button type="button" class="btn btn-primary">Primary</button>
+{{name}}
+{% endblock %}

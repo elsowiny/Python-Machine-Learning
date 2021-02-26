@@ -1,0 +1,14 @@
+.navbar{
+margin-bottom: 0px !important;
+}
+
+.nav>li{
+a{
+color:red;
+}
+display: content !important;
+
+}
+
+.nav{
+display:none;}
